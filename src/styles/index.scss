@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lemon&family=Poppins:wght@200;300;400;500&display=swap');
+
+html{
+  font-size: 18px;
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+main{
+  padding: 50px;
+}
+//
+
+//variable//
+
+  $font-main: 'Poppins', sans-serif;
+  $font-menu: 'Concert One', 'cursive';
+  $font-heading: 'Lemon', 'cursive';
+
+  $width-normal: 1400px;
+//
+button{
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: yellowgreen;
+  color: white;
+  cursor: pointer;
+}
+
+//section width
+.Home,.StorePage,.DetailPage,.NavBar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-layout{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $width-normal;
+  padding: 0px 20px;
+  margin: 20px 0px;
+}
+
+.ReactModal__Overlay{
+  backdrop-filter: blur(7.5px);
+}
+//
+
+@import './app.scss';
+@import './renav.scss';
+@import './home.scss';
+@import './item-cards.scss';
+@import './store.scss';
+@import './detail.scss'
